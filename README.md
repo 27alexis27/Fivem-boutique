@@ -6,7 +6,6 @@ Script de Boutique assez complez et totalement logs permettant de monétiser vot
 
 ## Installation
 
-Install my-project with npm
 
 ```bash
   - Installer le Boutique.SQL dans votre base de donnée (si sa fait une erreur supprimer la colonne ID dans la table user)
