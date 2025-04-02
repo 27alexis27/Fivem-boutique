@@ -1,0 +1,3 @@
+ALTER TABLE `users`
+	ADD COLUMN `coins` int(11) NOT NULL DEFAULT '0',
+	ADD COLUMN `id_boutique` INT(11) NOT NULL AUTO_INCREMENT, ADD UNIQUE KEY (id_boutique);
