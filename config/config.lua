@@ -1,5 +1,7 @@
 BoutiqueConfig = {
-    Framework = "es_extended",
+    Type = "new", -- old/new        pour la version ESX
+    Trigger = "esx:getSharedObject", -- trigger esx de la base
+    Framework = "es_extended", -- Le nom du framework pour l'importation ESX
     
         -- ------------------------------ Apparence de la boutique -----------------------------------------
     
@@ -11,8 +13,8 @@ BoutiqueConfig = {
     Touche = "F1", -- touche pour ouvrir la boutique 
     Hash = "288", -- hash qui permet d'ouvrir le menu
     Type = "money", -- type d'argent a give
-    Namecoin = "Pcoins~s~", -- le nom des coins de la boutique
-    Lien = "https://pablo-script.tebex.io", -- lien de votre boutique , discord...
+    Namecoin = "Coins~s~", -- le nom des coins de la boutique
+    Lien = "https://discord.gg/arizonarp", -- lien de votre boutique , discord...
     LineR = "100", -- couleur du rageUI.Line Red
     LineG = "0", -- couleur du rageUI.Line Green
     LineB = "255", -- couleur du rageUI.Line Blue
@@ -27,12 +29,12 @@ BoutiqueConfig = {
     -- ------------------------------Contenue de la section Logs -----------------------------------------
 
     ColorEmbed = "743891", -- couleur des embeds
-    Icon = "https://media.discordapp.net/attachments/1174751284205715486/1191695251111411732/52c3aFN.png?ex=65d48430&is=65c20f30&hm=999b3dddab2a28a6d97ec4f8df8af9137b0be7eba19af79afc2b4426aaa8c153&=&format=webp&quality=lossless&width=671&height=671", -- lien de l'icon des logs
-    Webhookmoney = "https://discord.com/api/webhooks/1175586851856318565/png3yCNkWrslkC0w91p7ApV5zYqyWZAHMDfWf8kOdw_cDIIeA95Hb9QTQ9olny4xQRNU", -- webhook pour les achats d'argent... 
-    Webhookcar = "https://discord.com/api/webhooks/1175586851856318565/png3yCNkWrslkC0w91p7ApV5zYqyWZAHMDfWf8kOdw_cDIIeA95Hb9QTQ9olny4xQRNU",
-    Webhookweapon = "https://discord.com/api/webhooks/1175586851856318565/png3yCNkWrslkC0w91p7ApV5zYqyWZAHMDfWf8kOdw_cDIIeA95Hb9QTQ9olny4xQRNU",
-    Webhookpack = "https://discord.com/api/webhooks/1175586851856318565/png3yCNkWrslkC0w91p7ApV5zYqyWZAHMDfWf8kOdw_cDIIeA95Hb9QTQ9olny4xQRNU",
-    Webhooktransfer = "https://discord.com/api/webhooks/1175586851856318565/png3yCNkWrslkC0w91p7ApV5zYqyWZAHMDfWf8kOdw_cDIIeA95Hb9QTQ9olny4xQRNU",
+    Icon = "https://discord.com/api/webhooks/", -- lien de l'icon des logs
+    Webhookmoney = "https://discord.com/api/webhooks/", -- webhook pour les achats d'argent... 
+    Webhookcar = "https://discord.com/api/webhooks/",
+    Webhookweapon = "https://discord.com/api/webhooks/",
+    Webhookpack = "https://discord.com/api/webhooks/",
+    Webhooktransfer = "https://discord.com/api/webhooks/",
     -- ------------------------------ Bouton actif -----------------------------------------
     
     Coin = true, -- ajouter le boutons boutique (lien/bouton)

@@ -1,4 +1,14 @@
-ESX = exports[BoutiqueConfig.Framework]:getSharedObject()
+ESX = nil
+if BoutiqueConfig.Type == "new" then
+    ESX = exports[BoutiqueConfig.Framework]:getSharedObject()
+else
+    Citizen.CreateThread(function()
+        while ESX == nil do 
+            TriggerEvent(BoutiqueConfig.Trigger, function(obj) ESX = obj end)
+            Citizen.Wait(5000)
+        end
+    end)
+end
 
 --Callback
 ESX.RegisterServerCallback('Pablo:GetData', function(source, cb)
